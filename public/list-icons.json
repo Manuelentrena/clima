@@ -1,0 +1,126 @@
+{
+  "soleado": [
+    {
+      "clear sky": "clear sky"
+    }
+  ],
+  "lluvia_ligera_y_claros": [
+    {
+      "squalls": "squalls",
+      "light intensity drizzle": "light intensity drizzle",
+      "light intensity shower rain": "light intensity shower rain"
+    }
+  ],
+  "nevada_ligera_y_claros": [
+    {
+      "Light shower snow": "Light shower snow"
+    }
+  ],
+  "nuboso": [
+    {
+      "mist": "mist",
+      "few clouds: 11-25%": "few clouds: 11-25%",
+      "scattered clouds: 25-50%": "scattered clouds: 25-50%"
+    }
+  ],
+  "nublado": [
+    {
+      "broken clouds: 51-84%": "broken clouds: 51-84%",
+      "overcast clouds: 85-100%": "overcast clouds: 85-100%"
+    }
+  ],
+  "escarcha": [],
+  "nevada_fuerte": [
+    {
+      "Heavy snow": "Heavy snow",
+      "Heavy shower snow": "Heavy shower snow"
+    }
+  ],
+  "nevada_moderada": [
+    {
+      "Snow": "Snow",
+      "Light rain and snow": "Light rain and snow",
+      "Rain and snow": "Rain and snow",
+      "Shower snow": "Shower snow"
+    }
+  ],
+  "nevada_ligera": [
+    {
+      "light snow": "light snow"
+    }
+  ],
+  "viento_arenoso": [
+    {
+      "sand/ dust whirls": "sand/ dust whirls",
+      "sand": "sand",
+      "volcanic ash": "volcanic ash",
+      "dust": "dust",
+      "tornado": "tornado"
+    }
+  ],
+  "granizada": [
+    {
+      "freezing rain": "freezing rain"
+    }
+  ],
+  "tormenta_de_lluvia": [
+    {
+      "light thunderstorm": "light thunderstorm",
+      "ragged thunderstorm": "ragged thunderstorm",
+      "very heavy rain": "very heavy rain",
+      "extreme rain": "extreme rain"
+    }
+  ],
+  "tormenta_de_rayos": [
+    {
+      "thunderstorm with light rain": "thunderstorm with light rain",
+      "thunderstorm with rain": "thunderstorm with rain",
+      "thunderstorm with heavy rain": "thunderstorm with heavy rain",
+      "thunderstorm": "thunderstorm",
+      "heavy thunderstorm": "heavy thunderstorm",
+      "thunderstorm with light drizzle": "thunderstorm with light drizzle",
+      "thunderstorm with drizzle": "thunderstorm with drizzle",
+      "thunderstorm with heavy drizzle": "thunderstorm with heavy drizzle"
+    }
+  ],
+  "lluvia_fuerte": [
+    {
+      "heavy shower rain and drizzle": "heavy shower rain and drizzle",
+      "heavy intensity rain": "heavy intensity rain",
+      "heavy intensity shower rain": "heavy intensity shower rain",
+      "heavy intensity drizzle rain": "heavy intensity drizzle rain"
+    }
+  ],
+  "lluvia_moderada": [
+    {
+      "heavy intensity drizzle": "heavy intensity drizzle",
+      "light intensity drizzle rain": "light intensity drizzle rain",
+      "shower rain and drizzle": "shower rain and drizzle",
+      "moderate rain": "moderate rain",
+      "shower rain": "shower rain",
+      "ragged shower rain": "ragged shower rain"
+    }
+  ],
+  "lluvia_ligera": [
+    {
+      "drizzle": "drizzle",
+      "drizzle rain": "drizzle rain",
+      "shower drizzle": "shower drizzle",
+      "light rain": "light rain"
+    }
+  ],
+  "agua_nieve": [
+    {
+      "Sleet": "Sleet",
+      "Light shower sleet": "Light shower sleet",
+      "Shower sleet": "Shower sleet"
+    }
+  ],
+  "niebla": [
+    {
+      "fog": "fog",
+      "Haze": "Haze",
+      "Smoke": "Smoke"
+    }
+  ]
+}

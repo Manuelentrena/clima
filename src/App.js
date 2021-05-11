@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Paisaje from "./components/Paisaje/Paisaje";
+import Molino from "./components/Molino/Molino";
+import Clima from "./components/Clima/Clima";
+import Boton from "./components/Boton/Boton";
+import Background from "./components/Background/Background";
+import Form from "./components/Form/Form";
 
 function App() {
+  const tipo = "azul";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Background tipo={tipo}>
+      <div className="data">
+        <Clima viento="1.5" franja="noche" archivo="nieve-ligera" />
+      </div>
+      <Molino id="molino1" viento="1" tipo={tipo} />
+      <Molino id="molino2" viento="1" tipo={tipo} />
+      <Molino id="molino3" viento="1" tipo={tipo} />
+      <Boton tipo={tipo} />
+      <Paisaje tipo={tipo} />
+      <Form tipo={tipo} />
+    </Background>
   );
 }
 
