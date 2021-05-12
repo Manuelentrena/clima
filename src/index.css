@@ -14,7 +14,6 @@
 }
 
 html {
-  height: 100vh;
   overflow: hidden;
   font-family: "Myanmar Text Bold";
   font-weight: bold;
@@ -22,19 +21,25 @@ html {
 }
 
 body {
-  height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
+  max-width: 500px;
 }
 
 #root {
+  /* max-width: 500px; */
+  /* margin: 0 auto; */
+  height: 100vh;
+  width: 100vw;
   max-width: 500px;
-  margin: 0 auto;
+  position: relative;
 }
 
 .data {
   height: 100%;
+  width: 100vw;
+  max-width: 500px;
 }
 
 /* CLASES DE LAS TEMPS MAX MIN */
@@ -55,6 +60,13 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0rem 4vw;
+}
+
+@media (min-width: 500px) {
+  .temp__data p {
+    font-size: 2.8rem;
+    margin: 0rem 3rem;
+  }
 }
 
 .temp__data p {

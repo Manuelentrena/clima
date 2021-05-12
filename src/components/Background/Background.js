@@ -12,7 +12,8 @@ const Background = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  position: relative;
+  width: 100vw;
+  max-width: 500px;
 `;
 
 export default Background;
