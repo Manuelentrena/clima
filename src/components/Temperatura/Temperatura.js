@@ -4,7 +4,7 @@ import { PrincipalOscuro } from "../../colors";
 const Temperatura = styled.p`
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   color: ${({ tipo }) => PrincipalOscuro(tipo)};
   font-size: 16vw;

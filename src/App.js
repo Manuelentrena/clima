@@ -11,6 +11,7 @@ import NameCity from "./components/NameCity/NameCity";
 import NameCountry from "./components/NameCountry/NameCountry";
 import Temperatura from "./components/Temperatura/Temperatura";
 import TemperaturaPicos from "./components/TemperaturaPicos/TemperaturaPicos";
+import Footer from "./components/Footer/Footer";
 
 const climaDefault = {
   zona: "dia",
@@ -123,6 +124,7 @@ function App() {
           setHasPeticion={setHasPeticion}
         />
       ) : null}
+      <Footer tipo={tipo} />
     </Background>
   );
 }
