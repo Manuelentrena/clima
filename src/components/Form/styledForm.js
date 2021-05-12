@@ -10,7 +10,7 @@ export const Formstyled = styled.div`
   background-color: rgba(255, 255, 255, 0.5);
   width: auto;
   position: absolute;
-  bottom: 4rem;
+  bottom: 5.5rem;
   left: 0;
   right: 0;
   margin: 1.5rem;

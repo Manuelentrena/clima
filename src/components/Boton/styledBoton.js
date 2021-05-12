@@ -3,7 +3,7 @@ import { Principal, Secundario } from "../../colors";
 
 export const Botonstyled = styled.button`
   position: absolute;
-  bottom: 1rem;
+  bottom: 3rem;
   left: 1.5rem;
   width: fit-content;
   border-radius: 50%;
