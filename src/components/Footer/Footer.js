@@ -22,7 +22,7 @@ const DivFooter = styled.div`
   left: 0;
   display: flex;
   padding: 1rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 `;
 
 const Footer = ({ tipo }) => {

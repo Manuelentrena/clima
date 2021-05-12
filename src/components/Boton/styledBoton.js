@@ -12,7 +12,8 @@ export const Botonstyled = styled.button`
   display: grid;
   place-items: center;
   cursor: pointer;
-
+  /* box-shadow: 6px 6px 10px -3px rgba(0, 0, 0, 0.4); */
+  box-shadow: 5px 5px 6px 0px rgba(50, 50, 50, 0.33);
   & path {
     fill: ${({ tipo }) => Principal(tipo)};
   }
