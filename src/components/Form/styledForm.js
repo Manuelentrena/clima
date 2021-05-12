@@ -16,7 +16,6 @@ export const Formstyled = styled.div`
   margin: 1.5rem;
   padding: 2rem;
   border-radius: 25px;
-  /* display: none; */
 `;
 
 export const Line = styled.div`

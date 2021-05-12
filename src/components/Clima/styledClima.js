@@ -9,6 +9,4 @@ export const Climastyled = styled.div`
   width: 40vw;
   margin: 1rem auto;
   max-width: 200px;
-  /*   @media (min-width: 500px) {
-  } */
 `;

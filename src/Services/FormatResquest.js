@@ -40,8 +40,6 @@ const FormatResquest = (respuesta) => {
   data.country = respuesta?.sys?.country;
   data.weather = chooseAnimation(respuesta?.weather?.[0].description);
   data.tipo = chooseInterfaz(data.weather, data.zona);
-  console.log(respuesta);
-  console.log(data);
   return data;
 };
 
