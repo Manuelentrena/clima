@@ -10,6 +10,30 @@ export const Principal = (tipo) => {
   }
 };
 
+export const PrincipalOscuro = (tipo) => {
+  if (tipo === "oscuro") {
+    return "rgba(255, 255, 255, 1)";
+  } else if (tipo === "gris") {
+    return "rgba(27, 47, 62, 1)";
+  } else if (tipo === "azul") {
+    return "rgba(13, 87, 148, 1)";
+  } else {
+    return "rgba(208, 51, 51, 1)";
+  }
+};
+
+export const PrincipalOscuro75 = (tipo) => {
+  if (tipo === "oscuro") {
+    return "rgba(255, 255, 255, 0.75)";
+  } else if (tipo === "gris") {
+    return "rgba(27, 47, 62, 0.75)";
+  } else if (tipo === "azul") {
+    return "rgba(13, 87, 148, 0.75)";
+  } else {
+    return "rgba(208, 51, 51, 0.75)";
+  }
+};
+
 export const PrincipalBorder = (tipo) => {
   if (tipo === "oscuro") {
     return "rgba(48, 27, 63, 0.5)";
@@ -67,5 +91,13 @@ export const BackgroundFinal = (tipo) => {
     return "rgba(135, 213, 246, 1)";
   } else {
     return "rgba(225, 156, 93, 1)";
+  }
+};
+
+export const Rotate = (rotate) => {
+  if (rotate === "true") {
+    return "rotate(-180deg)";
+  } else if (rotate === "false") {
+    return "rotate(0deg)";
   }
 };

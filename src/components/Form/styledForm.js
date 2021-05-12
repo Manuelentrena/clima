@@ -13,7 +13,7 @@ export const Formstyled = styled.div`
   bottom: 4rem;
   left: 0;
   right: 0;
-  margin: 2rem;
+  margin: 1.5rem;
   padding: 2rem;
   border-radius: 25px;
   /* display: none; */
@@ -28,7 +28,12 @@ export const Line = styled.div`
 `;
 
 export const Error = styled.div`
-  background-color: red;
+  background-color: #ffd4d4;
+  color: #ff0000;
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 25px;
 `;
 
 export const Button = styled.button`

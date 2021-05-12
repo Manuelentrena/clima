@@ -36,3 +36,36 @@ body {
 .data {
   height: 100%;
 }
+
+/* CLASES DE LAS TEMPS MAX MIN */
+
+.temp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 0 3rem; */
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 47%;
+}
+
+.temp__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem 4vw;
+}
+
+.temp__data p {
+  margin: 0;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+  font-size: 8vw;
+}
+
+@media (min-width: 500px) {
+  .temp__data p {
+    font-size: 2.8rem;
+  }
+}

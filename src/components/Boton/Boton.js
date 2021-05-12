@@ -1,13 +1,9 @@
 import React from "react";
 import { Botonstyled } from "./styledBoton";
 
-const mensaje = () => {
-  console.log("dentro");
-};
-
-const Boton = ({ tipo }) => {
+const Boton = ({ tipo, showForm }) => {
   return (
-    <Botonstyled tipo={tipo} onClick={mensaje}>
+    <Botonstyled tipo={tipo} onClick={showForm}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="27.4"
