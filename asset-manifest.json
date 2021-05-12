@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/clima/static/css/main.c7a99715.chunk.css",
-    "main.js": "/clima/static/js/main.c0b4f414.chunk.js",
-    "main.js.map": "/clima/static/js/main.c0b4f414.chunk.js.map",
+    "main.js": "/clima/static/js/main.8d87b480.chunk.js",
+    "main.js.map": "/clima/static/js/main.8d87b480.chunk.js.map",
     "runtime-main.js": "/clima/static/js/runtime-main.8adebca0.js",
     "runtime-main.js.map": "/clima/static/js/runtime-main.8adebca0.js.map",
     "static/js/2.66687da7.chunk.js": "/clima/static/js/2.66687da7.chunk.js",
@@ -14,12 +14,12 @@
     "static/media/paisaje-azul.d86b1855.svg": "/clima/static/media/paisaje-azul.d86b1855.svg",
     "static/media/paisaje-gris.c9d17ec9.svg": "/clima/static/media/paisaje-gris.c9d17ec9.svg",
     "static/media/paisaje-oscuro.f82e318b.svg": "/clima/static/media/paisaje-oscuro.f82e318b.svg",
-    "static/media/paisaje-rojo.90f405d7.svg": "/clima/static/media/paisaje-rojo.90f405d7.svg"
+    "static/media/paisaje-rojo.beb2799e.svg": "/clima/static/media/paisaje-rojo.beb2799e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8adebca0.js",
     "static/js/2.66687da7.chunk.js",
     "static/css/main.c7a99715.chunk.css",
-    "static/js/main.c0b4f414.chunk.js"
+    "static/js/main.8d87b480.chunk.js"
   ]
 }
