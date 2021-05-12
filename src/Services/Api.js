@@ -1,6 +1,6 @@
 const KEY = "b87cafc48925a9ed60ca20297f8d38ac";
-const urlGEO = "";
-const url = "";
+let urlGEO = "";
+let url = "";
 
 export const consultarAPI = async (ciudad, pais, { latitude, longitude }) => {
   if (latitude && longitude) {
