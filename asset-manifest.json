@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/clima/static/css/main.28d4dc72.chunk.css",
-    "main.js": "/clima/static/js/main.43f1f3ed.chunk.js",
-    "main.js.map": "/clima/static/js/main.43f1f3ed.chunk.js.map",
+    "main.js": "/clima/static/js/main.3091b9e3.chunk.js",
+    "main.js.map": "/clima/static/js/main.3091b9e3.chunk.js.map",
     "runtime-main.js": "/clima/static/js/runtime-main.8adebca0.js",
     "runtime-main.js.map": "/clima/static/js/runtime-main.8adebca0.js.map",
-    "static/js/2.66687da7.chunk.js": "/clima/static/js/2.66687da7.chunk.js",
-    "static/js/2.66687da7.chunk.js.map": "/clima/static/js/2.66687da7.chunk.js.map",
+    "static/js/2.701f003c.chunk.js": "/clima/static/js/2.701f003c.chunk.js",
+    "static/js/2.701f003c.chunk.js.map": "/clima/static/js/2.701f003c.chunk.js.map",
     "index.html": "/clima/index.html",
     "static/css/main.28d4dc72.chunk.css.map": "/clima/static/css/main.28d4dc72.chunk.css.map",
-    "static/js/2.66687da7.chunk.js.LICENSE.txt": "/clima/static/js/2.66687da7.chunk.js.LICENSE.txt",
+    "static/js/2.701f003c.chunk.js.LICENSE.txt": "/clima/static/js/2.701f003c.chunk.js.LICENSE.txt",
     "static/media/index.css": "/clima/static/media/mmrtextb.4317c4c2.ttf",
     "static/media/paisaje-azul.d86b1855.svg": "/clima/static/media/paisaje-azul.d86b1855.svg",
     "static/media/paisaje-gris.c9d17ec9.svg": "/clima/static/media/paisaje-gris.c9d17ec9.svg",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8adebca0.js",
-    "static/js/2.66687da7.chunk.js",
+    "static/js/2.701f003c.chunk.js",
     "static/css/main.28d4dc72.chunk.css",
-    "static/js/main.43f1f3ed.chunk.js"
+    "static/js/main.3091b9e3.chunk.js"
   ]
 }
