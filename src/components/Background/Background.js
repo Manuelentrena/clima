@@ -14,6 +14,8 @@ const Background = styled.div`
   height: 100vh;
   width: 100vw;
   max-width: 500px;
+  position: relative;
+  overflow: hidden;
 `;
 
 export default Background;

@@ -12,6 +12,7 @@ import NameCountry from "./components/NameCountry/NameCountry";
 import Temperatura from "./components/Temperatura/Temperatura";
 import TemperaturaPicos from "./components/TemperaturaPicos/TemperaturaPicos";
 import Footer from "./components/Footer/Footer";
+import Geolocalizacion from "./components/Geolocalizacion/Geolocalizacion";
 
 const climaDefault = {
   zona: "dia",
@@ -20,8 +21,8 @@ const climaDefault = {
   min: "0",
   wind: "1",
   weather: "despejado",
-  country: "No country",
-  city: "No city",
+  country: "Country Not Found",
+  city: "City Not Found",
   largeCity: "",
   tipo: "rojo",
 };
@@ -32,6 +33,9 @@ const busquedaDefault = {
 };
 
 function App() {
+  /* Geolocalizacion */
+  const [geo, setGeo] = useState(false);
+
   /* Data del clima */
   const [clima, setClima] = useState(climaDefault);
 
@@ -60,14 +64,21 @@ function App() {
   useLayoutEffect(() => {
     async function fetchData() {
       if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition(async function (position) {
-          const respuesta = await consultarAPI(null, null, position.coords);
-          if (respuesta.cod === 200) {
-            setClima(FormatResquest(respuesta));
-          } else {
-            setClima(climaDefault);
-          }
-        });
+        navigator.geolocation.getCurrentPosition(
+          async function (position) {
+            const respuesta = await consultarAPI(null, null, position.coords);
+            if (respuesta.cod === 200) {
+              setClima(FormatResquest(respuesta));
+            } else {
+              setClima(climaDefault);
+            }
+          },
+          async function (error) {
+            setGeo(true);
+            console.log(error.code + " " + error.message);
+          },
+          { timeout: 10000 } /* Espera 10 segundos */
+        );
       } else {
         setHasPeticion(true);
       }
@@ -103,29 +114,32 @@ function App() {
   };
 
   return (
-    <Background tipo={tipo}>
-      <div className="data">
-        <NameCity tipo={tipo}>{city.toUpperCase()}</NameCity>
-        <NameCountry tipo={tipo}>{country + ", " + largeCity}</NameCountry>
-        <Clima viento={1} franja={zona} archivo={weather} />
-        <Temperatura tipo={tipo}>{temp}º</Temperatura>
-        <TemperaturaPicos tipo={tipo} max={max} min={min} />
-      </div>
-      <Molino id="molino1" viento={wind / 2.1} tipo={tipo} />
-      <Molino id="molino2" viento={wind / 2} tipo={tipo} />
-      <Molino id="molino3" viento={wind / 1.9} tipo={tipo} />
-      <Boton tipo={tipo} showForm={showForm} />
-      <Paisaje tipo={tipo} />
-      {form ? (
-        <Form
-          tipo={tipo}
-          guardarBusqueda={guardarBusqueda}
-          busqueda={busqueda}
-          setHasPeticion={setHasPeticion}
-        />
-      ) : null}
-      <Footer tipo={tipo} />
-    </Background>
+    <>
+      {geo ? <Geolocalizacion tipo={tipo} /> : null}
+      <Background tipo={tipo}>
+        <div className="data">
+          <NameCity tipo={tipo}>{city.toUpperCase()}</NameCity>
+          <NameCountry tipo={tipo}>{country + ", " + largeCity}</NameCountry>
+          <Clima viento={1} franja={zona} archivo={weather} />
+          <Temperatura tipo={tipo}>{temp}º</Temperatura>
+          <TemperaturaPicos tipo={tipo} max={max} min={min} />
+        </div>
+        <Molino id="molino1" viento={wind / 2.1} tipo={tipo} />
+        <Molino id="molino2" viento={wind / 2} tipo={tipo} />
+        <Molino id="molino3" viento={wind / 1.9} tipo={tipo} />
+        <Boton tipo={tipo} showForm={showForm} />
+        <Paisaje tipo={tipo} />
+        {form ? (
+          <Form
+            tipo={tipo}
+            guardarBusqueda={guardarBusqueda}
+            busqueda={busqueda}
+            setHasPeticion={setHasPeticion}
+          />
+        ) : null}
+        <Footer tipo={tipo} />
+      </Background>
+    </>
   );
 }
 

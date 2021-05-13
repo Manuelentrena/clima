@@ -7,7 +7,7 @@ import {
 } from "../../colors";
 
 export const Formstyled = styled.div`
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   width: auto;
   position: absolute;
   bottom: 7.5rem;
